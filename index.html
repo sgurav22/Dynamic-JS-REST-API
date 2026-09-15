@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 05 - API Client</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>FakeStore - Task 05</h1>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search products...">
+    <select id="sort">
+      <option value="default">Sort by</option>
+      <option value="low-high">Price: Low to High</option>
+      <option value="high-low">Price: High to Low</option>
+    </select>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </div>
+  <div id="categoryTabs" class="tabs"></div>
+</header>
+
+<div id="errorBanner" class="error hidden"></div>
+<main id="productGrid" class="grid"></main>
+<div id="skeleton" class="grid"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
