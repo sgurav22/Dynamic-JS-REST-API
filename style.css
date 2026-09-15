@@ -1,0 +1,13 @@
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+.controls input, .controls select{padding:8px 12px;border-radius:8px;border:1px solid #ccc}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.tab{padding:6px 14px;border-radius:20px;border:1px solid #ddd;cursor:pointer;background:#fff}
+.tab.active{background:#000;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;padding:20px}
+.card{background:rgba(255,255,255,0.8);backdrop-filter:blur(10px);border-radius:16px;padding:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+.card img{width:100%;height:160px;object-fit:contain}
+.skeleton-card{height:250px;background:linear-gradient(90deg,#eee 25%,#ddd 50%,#eee 75%);background-size:200% 100%;animation:load 1.5s infinite}
+@keyframes load{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.error{background:#ffdddd;color:#900;padding:12px;margin:10px;border-radius:8px}
+.hidden{display:none}
+.price{font-weight:bold}
